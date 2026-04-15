@@ -173,7 +173,7 @@
 &kp Q          &kp W     &kp E          &kp R          &kp T                                          &kp Y          &kp U          &kp I      &kp O       &kp P
 &hm LCTRL A    &hm LALT S &hm LGUI D    &hm_s LSHFT F  &kp G                                          &kp H          &hm_s RSHFT J  &hm RGUI K &hm RALT L  &hm RCTRL SEMI
 &kp Z          &kp X     &kp C          &kp V          &kp B                                          &kp N          &kp M          &kp COMMA  &kp DOT     &kp SLASH
-&mt LCTRL ESC  &kp LGUI  &lt FN LANG2   &none          &lt_spc NAV SPACE  &lt SCROLL TAB  &kp BKSP       &lt NUM ENTER               &lt SYM LANG1  &kp DEL  &mt RSHFT SQT
+&mt LCTRL ESC  &kp LGUI  &lt SYM LANG2  &none          &lt_spc NAV SPACE  &lt SCROLL TAB  &kp BKSP       &lt NUM ENTER               &lt FN LANG1   &kp DEL  &mt RSHFT SQT
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
@@ -222,18 +222,17 @@
             sensor-bindings = <&re_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
-        // Layer 4: SYM (hold right Enter)
-        // Left: shifted symbols, Right: explicit modifiers
+        // Layer 4: SYM -> MOUSE MANUAL (hold 英数 pos32)
+        // Same layout as MOUSE layer but manually activated
+        // Left hand holds layer key, right hand uses trackball + clicks
 
         SYM {
             bindings = <
-&kp LBRC   &kp AMPS  &kp ASTRK  &kp LPAR   &kp RBRC                          &none   &none      &none     &none     &none
-&kp COLON  &kp DLLR  &kp PRCNT  &kp CARET  &kp PLUS                          &none   &kp RSHFT  &kp RGUI  &kp RALT  &kp RCTRL
-&kp TILDE  &kp EXCL  &kp AT     &kp HASH   &kp PIPE                          &none   &none      &none     &none     &none
-&trans     &trans    &kp LPAR   &none      &kp RPAR   &kp UNDER  &trans     &trans              &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans                    &trans    &trans    &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans                    &trans    &mkp MB1  &mkp MB2  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                    &mkp MB3  &mkp MB4  &mkp MB5  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans              &trans    &trans  &trans
             >;
-
-            sensor-bindings = <&re_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
         // Layer 5: SCROLL (hold Tab)
