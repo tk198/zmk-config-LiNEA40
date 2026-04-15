@@ -222,17 +222,18 @@
             sensor-bindings = <&re_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
-        // Layer 4: SYM -> MOUSE MANUAL (hold 英数 pos32)
-        // Same layout as MOUSE layer but manually activated
-        // Left hand holds layer key, right hand uses trackball + clicks
+        // Layer 4: SYM (hold 英数 pos32)
+        // Left: shifted symbols, Right: explicit modifiers
 
         SYM {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans    &trans    &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans                    &trans    &mkp MB1  &mkp MB2  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                    &mkp MB3  &mkp MB4  &mkp MB5  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans              &trans    &trans  &trans
+&kp LBRC   &kp AMPS  &kp ASTRK  &kp LPAR   &kp RBRC                          &none   &none      &none     &none     &none
+&kp COLON  &kp DLLR  &kp PRCNT  &kp CARET  &kp PLUS                          &none   &kp RSHFT  &kp RGUI  &kp RALT  &kp RCTRL
+&kp TILDE  &kp EXCL  &kp AT     &kp HASH   &kp PIPE                          &none   &none      &none     &none     &none
+&trans     &trans    &kp LPAR   &none      &kp RPAR   &kp UNDER  &trans     &trans              &trans    &trans    &trans
             >;
+
+            sensor-bindings = <&re_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
         // Layer 5: SCROLL (hold Tab)
