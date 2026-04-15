@@ -180,12 +180,12 @@
         };
 
         // Layer 1: MOUSE (auto-activated by trackball)
-        // Left hand modifiers are transparent -> use D(Cmd)+J(MB1), F(Shift)+K(MB2) etc.
+        // Left hand modifiers are transparent -> use D(Cmd)+U(MB1), F(Shift)+I(MB2) etc.
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans    &trans  &trans
 &trans  &trans  &trans  &trans  &trans                    &trans  &mkp MB1  &mkp MB2  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans    &trans  &trans
 &trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans    &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans            &trans    &trans  &trans
             >;
@@ -198,8 +198,8 @@
 
         NAV {
             bindings = <
-&none      &none      &none      &none      &none                          &none     &kp PG_DN  &kp UP    &kp PG_UP  &none
-&kp LCTRL  &kp LALT   &kp LGUI   &kp LSHFT  &none                          &kp HOME  &kp LEFT   &kp DOWN  &kp RIGHT  &kp END
+&none      &none      &none      &none      &none                          &kp HOME  &mkp MB1   &mkp MB2  &kp PG_DN  &kp PG_UP
+&kp LCTRL  &kp LALT   &kp LGUI   &kp LSHFT  &none                          &kp LEFT  &kp DOWN   &kp UP    &kp RIGHT  &kp END
 &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(A)                      &none     &none      &none     &none      &kp DEL
 &trans     &trans     &trans     &trans     &trans      &trans    &kp DEL  &trans                &trans    &trans     &trans
             >;
