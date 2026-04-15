@@ -88,6 +88,36 @@
                 , <&macro_release &kp LCTRL &kp LSHFT &kp LGUI>
                 ;
         };
+
+        ungroup: ungroup {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI &kp LSHFT>
+                , <&macro_tap &kp G>
+                , <&macro_release &kp LSHFT &kp LGUI>
+                ;
+        };
+
+        bring_fwd: bring_fwd {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI &kp LSHFT>
+                , <&macro_tap &kp RBKT>
+                , <&macro_release &kp LSHFT &kp LGUI>
+                ;
+        };
+
+        send_bwd: send_bwd {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI &kp LSHFT>
+                , <&macro_tap &kp LBKT>
+                , <&macro_release &kp LSHFT &kp LGUI>
+                ;
+        };
     };
 
     behaviors {
@@ -228,7 +258,7 @@
             bindings = <
 &kp F1     &kp F2    &kp F3    &kp F4     &kp F5                           &kp F6      &kp F7             &kp F8            &kp F9    &kp F10
 &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT  &kp F11                          &kp F12     &kp RSHFT          &kp RGUI          &kp RALT  &kp RCTRL
-&none      &none     &scrshot  &none      &none                            &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP   &kp C_BRI_DN  &kp C_BRI_UP
+&ungroup   &none     &scrshot  &send_bwd  &bring_fwd                       &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP   &kp C_BRI_DN  &kp C_BRI_UP
 &trans     &trans    &trans    &trans     &trans     &trans    &trans      &trans                         &trans            &trans    &mo WIRELESS
             >;
 
