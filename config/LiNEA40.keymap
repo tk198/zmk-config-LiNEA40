@@ -68,8 +68,7 @@
 
         Backtick {
             bindings = <&kp GRAVE>;
-            key-positions = <11 12>;
-            require-prior-idle-ms = <200>;
+            key-positions = <1 2>;
         };
 
         DeleteKey {
