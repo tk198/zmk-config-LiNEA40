@@ -180,11 +180,12 @@
         };
 
         // Layer 1: MOUSE (auto-activated by trackball)
-        // Left hand modifiers are transparent -> use D(Cmd)+U(MB1), F(Shift)+I(MB2) etc.
+        // All transparent - automouse only enables trackball cursor, no click buttons
+        // Use NAV layer (Space hold) for snipe + U(MB1)/I(MB2) clicking
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &mkp MB1  &mkp MB2  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans    &trans  &trans
 &trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans    &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans            &trans    &trans  &trans
