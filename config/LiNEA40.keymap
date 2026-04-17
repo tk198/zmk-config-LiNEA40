@@ -213,7 +213,7 @@
 
         NAV {
             bindings = <
-&none      &none      &none      &none      &none                          &kp HOME  &mkp MB1   &mkp MB2  &kp PG_DN  &kp PG_UP
+&none      &none      &none      &none      &none                          &kp HOME  &none      &none     &kp PG_DN  &kp PG_UP
 &kp LCTRL  &kp LALT   &kp LGUI   &kp LSHFT  &none                          &kp LEFT  &kp DOWN   &kp UP    &kp RIGHT  &kp END
 &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(A)                      &none     &none      &none     &none      &kp DEL
 &trans     &trans     &trans     &trans     &trans      &trans    &kp DEL  &trans                &trans    &trans     &trans
