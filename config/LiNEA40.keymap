@@ -229,7 +229,7 @@
         NUM {
             bindings = <
 &kp N1              &kp N2           &kp N3           &kp N4              &kp N5                             &kp N6  &kp N7     &kp N8     &kp N9          &kp N0
-&hm LCTRL SEMI      &hm LALT EQUAL   &hm LGUI MINUS   &hm_s LSHFT GRAVE   &kp BSLH                           &none   &kp RSHFT  &kp RGUI   &hm RALT LBKT   &hm RCTRL RBKT
+&hm LCTRL SEMI      &hm LALT EQUAL   &hm LGUI MINUS   &hm_s LSHFT GRAVE   &kp BSLH                           &none   &kp RSHFT  &kp RGUI   &hm LALT LBKT   &hm RCTRL RBKT
 &none               &none            &none            &none               &none                              &none   &none      &kp COMMA  &kp DOT         &kp SLASH
 &trans              &trans           &trans           &none               &trans     &trans    &kp DEL       &trans              &trans     &trans          &trans
             >;
@@ -243,7 +243,7 @@
         SYM {
             bindings = <
 &kp LBRC   &kp AMPS  &kp ASTRK  &kp LPAR   &kp RBRC                          &none   &none      &none     &none     &none
-&kp COLON  &kp DLLR  &kp PRCNT  &kp CARET  &kp PLUS                          &none   &kp RSHFT  &kp RGUI  &kp RALT  &kp RCTRL
+&kp COLON  &kp DLLR  &kp PRCNT  &kp CARET  &kp PLUS                          &none   &kp RSHFT  &kp RGUI  &kp LALT  &kp RCTRL
 &kp TILDE  &kp EXCL  &kp AT     &kp HASH   &kp PIPE                          &none   &none      &none     &none     &none
 &trans     &trans    &kp LPAR   &none      &kp RPAR   &kp UNDER  &trans     &trans              &trans    &trans    &trans
             >;
@@ -272,7 +272,7 @@
         FN {
             bindings = <
 &kp F1     &kp F2    &kp F3    &kp F4     &kp F5                           &kp F6      &kp F7             &kp F8            &kp F9    &kp F10
-&kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT  &kp F11                          &kp F12     &kp RSHFT          &kp RGUI          &kp RALT  &kp RCTRL
+&kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT  &kp F11                          &kp F12     &kp RSHFT          &kp RGUI          &kp LALT  &kp RCTRL
 &ungroup   &none     &scrshot  &send_bwd  &bring_fwd                       &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP   &kp C_BRI_DN  &kp C_BRI_UP
 &trans     &trans    &trans    &trans     &trans     &trans    &trans      &trans                         &trans            &trans    &mo WIRELESS
             >;
