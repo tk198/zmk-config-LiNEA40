@@ -75,6 +75,20 @@
             bindings = <&kp DEL>;
             key-positions = <7 8>;
         };
+
+        MouseClick {
+            bindings = <&mkp MB1>;
+            key-positions = <16 17>;
+            layers = <1 2>;
+            timeout-ms = <50>;
+        };
+
+        MouseRightClick {
+            bindings = <&mkp MB2>;
+            key-positions = <17 18>;
+            layers = <1 2>;
+            timeout-ms = <50>;
+        };
     };
 
     macros {
